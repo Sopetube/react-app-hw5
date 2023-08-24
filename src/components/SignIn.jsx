@@ -1,11 +1,12 @@
 import style from './signin.module.css';
 import { useState } from 'react';
-import { Link } from "react-router-dom";
+import { Route, Routes, BrowserRouter, Link } from "react-router-dom";
 
 const emailRegexp = new RegExp('[a-z0-9]+@[a-z]+\.[a-z]{2,3}');
 const pwRegexp = new RegExp('^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$');
 
 const SignIn = () => {
+
     const [data, setData] = useState({email: '', password: '',});
 
     function changeHandler({target}){
@@ -24,7 +25,7 @@ const SignIn = () => {
         if(!value){
             target.classList.remove(style.error);
         }
-    setData({...data, [name]: value});
+    setData({...data, [name]: value});        
     }
 
     return(
@@ -65,4 +66,4 @@ const SignIn = () => {
     )
 }
 
-export default SignIn;
+export default SignIn
