@@ -1,4 +1,4 @@
-import style from './signin.module.css'
+import style from './signin.module.css';
 import { useState } from 'react';
 import { Link } from "react-router-dom";
 
@@ -65,4 +65,4 @@ const SignIn = () => {
     )
 }
 
-export default SignIn
+export default SignIn;
