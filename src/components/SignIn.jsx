@@ -6,7 +6,6 @@ const emailRegexp = new RegExp('[a-z0-9]+@[a-z]+\.[a-z]{2,3}');
 const pwRegexp = new RegExp('^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$');
 
 const SignIn = () => {
-
     const [data, setData] = useState({email: '', password: '',});
 
     function changeHandler({target}){
@@ -52,7 +51,7 @@ const SignIn = () => {
                 <div className={style.remeber}>
                     <input
                     type="checkbox"/>
-                <span className={style.rememberCheckbox}>Remember me</span>
+                        <span className={style.rememberCheckbox}>Remember me</span>
                 </div>
                 <button>Sign in</button>
                 <div className={style.ctaline}>
@@ -60,7 +59,6 @@ const SignIn = () => {
                     <Link to='/signup' className={style.signupbtn}>Don't have an account? Sign Up</Link>
                 </div>
                 <span className={style.copyright}>Copyright © Your Website 2023.</span>
-            
             </div>
             
     )

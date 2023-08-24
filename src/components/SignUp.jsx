@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { Link } from "react-router-dom";
 import style from './signup.module.css';
 
-
 const emailRegexp = new RegExp('[a-z0-9]+@[a-z]+\.[a-z]{2,3}');
 const pwRegexp = new RegExp('^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$');
 const nameRegexp = new RegExp('([A-Z]|[a-z]){3,}', 'i');
